@@ -118,3 +118,66 @@ console.log(etaViaggiatori) */
     /* if(fasciaEtaUtente === document.body.getElementsByTagName("option")[0]){
         console.log(fasciaEtaUtente)
     } */
+
+
+    var lista = document.getElementById("genera").addEventListener("click", fasciaEtaUtente);
+
+function fasciaEtaUtente(){
+    var fasciaEtaUtente; 
+    if(document.getElementsByTagName("option")[0]){
+        //utentePrezzo += utentePrezzo * 20 / 100;
+        fasciaEtaUtente += fasciacostoBiglietto(utentePrezzo) * 20 / 100;
+    }else if(document.getElementsByTagName("option")[1]){
+        //utentePrezzo;
+        fasciaEtaUtente += fasciacostoBiglietto(utentePrezzo)
+    }else if(document.getElementsByTagName("option")[2])
+        //utentePrezzo += utentePrezzo * 40 / 100;
+        fasciaEtaUtente += fasciacostoBiglietto(utentePrezzo) * 40 / 100;
+    return fasciaEtaUtente;
+}
+
+
+/* var utente= document.getElementById('preleva').value;
+console.log(utente); */
+
+    /* var operazione= document.getElementById("utente");
+    operazione.className="hidden"; */
+
+    
+    // prezzo generato in base all'opzione dell'età
+/*     var etaPrezzoUtente=document.getElementsByTagName("option");
+    etaPrezzoUtente += document.getElementById('offerta').innerHTML=etaPrezzoUtente; */
+
+
+    
+/*     var operazione=document.getElementById("utente");
+   /*  operazione.classList.remove("hidden");
+    operazione.classList.add("show");
+    operazione.className="show";  */
+
+
+    
+
+/* console.log(list())
+
+var lista = document.getElementById("genera").addEventListener("click", list);
+
+function list(){
+    var fasciaEtaUtente1= document.getElementsByTagName("option")[0];
+    var fasciaEtaUtente2= document.getElementsByTagName("option")[1];
+    var fasciaEtaUtente3= document.getElementsByTagName("option")[2];
+
+    utenteList=[fasciaEtaUtente1,fasciaEtaUtente2,fasciaEtaUtente3];
+
+    for(var i=0; i<utenteList.length; i++){
+    console.log(utenteList[i]);
+    }
+
+    return utenteList;
+
+}
+ */
+//Adesso devo dire all'utente di scegliere fra le tre opzioni ed in base alla sua età avrà un diverso costo del biglietto
+    // prezzo generato in base all'opzione dell'età
+/*     var etaPrezzoUtente=document.getElementsByTagName("option");
+    etaPrezzoUtente += document.getElementById('offerta').innerHTML=''; */

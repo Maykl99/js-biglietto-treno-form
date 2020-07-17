@@ -9,31 +9,29 @@ Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo
 Buon lavoro e buon viaggio! */
 
 
-/* var utente= document.getElementById('preleva').value;
-console.log(utente); */
+
+
+
+
 var genera=document.getElementById("genera").addEventListener("click", funzioneGenera);
 var annulla=document.getElementById("annulla").addEventListener("click",funzioneAnnulla);
 
 
 function funzioneAnnulla(){
-    /* var operazione= document.getElementById("utente");
-    operazione.className="hidden"; */
+
+    // annulla codici randomici di carrozza e codice cp
     var codiceCp=document.getElementById('codiceCp').innerHTML='';
     var carrozza=document.getElementById('carrozza').innerHTML='';
     
-    // genera il nome del passeggero
+    // annulla il nome del passeggero
     var utente= document.getElementById('preleva').value;
     utente += document.getElementById('nomePasseggero').innerHTML='';
 
-    // genera il prezzo del biglietto in base alla distanza
+    // annulla il prezzo del biglietto in base alla distanza
     var utentePrezzo= document.getElementById('prelevaDistanza').value;
     utentePrezzo += document.getElementById('prezzo').innerHTML=''; 
 
-    // prezzo generato in base all'opzione dell'età
-    var etaPrezzoUtente=document.getElementsByTagName("option");
-    etaPrezzoUtente += document.getElementById('offerta').innerHTML='';
-
-  return codiceCp, carrozza, utente, utentePrezzo, etaPrezzoUtente;
+  return codiceCp, carrozza, utente, utentePrezzo; //etaPrezzoUtente;
 }
 
 
@@ -42,14 +40,6 @@ function funzioneAnnulla(){
 // funzione genera al click del pulsante genera devo prendere i valori passati dagli input, nome e cognome, distanza di km e la fascia d'età;
 
 function funzioneGenera() {
-
-/*     var operazione=document.getElementById("utente");
-   /*  operazione.classList.remove("hidden");
-    operazione.classList.add("show");
-    operazione.className="show";  */
-
-    
-
 
     // genera codici randomici di carrozza e codice cp
     var codiceCp=document.getElementById('codiceCp').innerHTML=getRandomInt();
@@ -63,27 +53,12 @@ function funzioneGenera() {
     var utentePrezzo= document.getElementById('prelevaDistanza').value;
     utentePrezzo += document.getElementById('prezzo').innerHTML=costoBiglietto(utentePrezzo); 
 
-    // prezzo generato in base all'opzione dell'età
-    var etaPrezzoUtente=document.getElementsByTagName("option");
-    etaPrezzoUtente += document.getElementById('offerta').innerHTML=etaPrezzoUtente;
 
+    fasciaEta = document.getElementById('offerta').innerHTML=fasciaEta;
 
-
-  return codiceCp, carrozza, utente, utentePrezzo, etaPrezzoUtente;
+  return codiceCp, carrozza, utente, utentePrezzo, fasciaEta; //etaPrezzoUtente;
 }
 
-
-
-function fasciaEtaUtente(){
-    var fasciaEtaUtente; 
-    if(document.getElementsByTagName("option")[0]){
-        
-    }else if(document.getElementsByTagName("option")[1]){
-
-    }else if(document.getElementsByTagName("option")[2])
-
-    return fasciaEtaUtente;
-}
 
 
 // funzione che ritorna il prezzo in base alla distanza dei km da percorrere e in base all'età dell'utente
@@ -117,9 +92,3 @@ function numeroCarrozza(){
     return random;
 }
 
-
-
-var fasciaEtaUtente= document.getElementsByTagName("option")[1];
-console.log(fasciaEtaUtente);
-
-//Adesso devo dire all'utente di scegliere fra le tre opzioni ed in base alla sua età avrà un diverso costo del biglietto
