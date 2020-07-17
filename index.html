@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/12bool.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcola il prezzo del biglietto</h1>
+    <div class="col-8 col-offset-2 col-offset-right-2 container-first">
+        <div class="flex nomi">
+            <div>Nome Cognome</div>
+            <div id="km">Km da percorrere</div>
+            <div>Fascia d'età</div>
+        </div>
+        <div class="flex input">
+            <input id="preleva" type="text"  placeholder="Scrivi qui"> <!-- value="nomeCognome" -->
+            <input id="prelevaDistanza" type="text"  placeholder="Quant'è lungo il tuo tragitto?"> <!-- value="km" -->
+            <select>
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">Over 65</option>
+            </select>
+        </div>
+        <div class="flex bottoni">
+            <button id="genera">Genera</button>
+            <button id="annulla">Annulla</button>
+        </div>
+    </div>
+
+<div id="utente" class="hidden">
+    <h2>Il tuo biglietto</h2>
+    <div class="col-8 col-offset-2 container-second">
+        <div class="h3"><h3>Dettaglio passeggeri</h3></div>
+        <div class="content flex">
+            <div class="content-left">
+                <div class="nome-passeggero">
+                    <h4>Nome passeggero</h4>
+                    <div id="nomePasseggero"></div>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="flex nomi">
+                    <!-- devo stampare qui il risultato -->
+                    <div>Offerta</div>
+                    <div>Carrozza</div>
+                    <div>Codice Cp</div>
+                    <div>Costo biglietto</div>
+                </div>
+
+                <div class="flex nomi">
+                    <div id="offerta">tipo Offerta</div>
+                    <div id="carrozza">randomico</div>
+                    <div id="codiceCp">randomico</div>
+                    <div id="prezzo">0.00€</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(231, 106, 106);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* prima parte */ 
+
+.col-8{
+    background-color: rgb(227, 230, 233);
+    border: none;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.container-first{
+    height: 250px;
+}
+
+.flex.nomi, .flex.input{
+    width: 70%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.flex.input *{
+    padding: 14px 8px;
+    margin-right: 26px;
+    border-radius: 8px;
+}
+
+.flex.bottoni{
+    width: 20%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.flex.bottoni button{
+    padding: 13px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* seconda parte */
+
+/* .hidden{
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.show{
+    opacity: 1;
+	transition: 0.4s;
+} */
+
+.container-second{
+    height: 340px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.content .content-left{
+    width: 20%;
+    background-color: rgb(207, 200, 200);
+}
+
+.content .content-right{
+    width: 80%;
+}
+
+h4.nome-passeggero{
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 0;
+}
+
+
+
+/* attributi e tag che condividono le stesse regole! */
+
+h1,h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(235, 235, 235);
+}
+
+h1,h2, .flex.bottoni{
+    margin-top: 30px;
+}
+
+.flex.input *, .flex.bottoni button{
+    border: 1px solid rgb(231, 106, 106);
+}
