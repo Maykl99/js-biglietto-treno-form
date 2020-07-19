@@ -12,14 +12,14 @@
     <h1>Calcola il prezzo del biglietto</h1>
     <div class="col-8 col-offset-2 col-offset-right-2 container-first">
         <div class="flex nomi">
-            <div>Nome Cognome</div>
-            <div id="km">Km da percorrere</div>
-            <div>Fascia d'età</div>
+            <div><label for="preleva">Nome Cognome</label></div>
+            <div id="km"><label for="prelevaDistanza">Km da percorrere</label></div>
+            <div><label for="eta">Fascia d'età</label></div>
         </div>
         <div class="flex input">
             <input id="preleva" type="text"  placeholder="Scrivi qui"> <!-- value="nomeCognome" -->
-            <input id="prelevaDistanza" type="text"  placeholder="Quant'è lungo il tuo tragitto?"> <!-- value="km" -->
-            <select>
+            <input id="prelevaDistanza" type="number"  placeholder="Quant'è lungo il tuo tragitto?"> <!-- value="km" -->
+            <select id="eta">
                 <option id="minorenne" value="minorenne">Minorenne</option>
                 <option id="maggiorenne" value="maggiorenne">Maggiorenne</option>
                 <option id="over65" value="over65">Over 65</option>
@@ -31,8 +31,9 @@
         </div>
     </div>
 
-<div id="utente" class="hidden">
+
     <h2>Il tuo biglietto</h2>
+<div id="utente" class="hidden">
     <div class="col-8 col-offset-2 container-second">
         <div class="h3"><h3>Dettaglio passeggeri</h3></div>
         <div class="content flex">

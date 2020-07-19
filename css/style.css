@@ -48,7 +48,7 @@ body{
 
 /* seconda parte */
 
-/* .hidden{
+.hidden{
     opacity: 0;
     transition: 0.4s;
 }
@@ -56,7 +56,7 @@ body{
 .show{
     opacity: 1;
 	transition: 0.4s;
-} */
+} 
 
 .container-second{
     height: 340px;
