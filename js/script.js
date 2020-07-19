@@ -45,19 +45,6 @@ function funzioneGenera() {
 
 function funzioneAnnulla(){
     var nascondi=document.getElementById('utente').className='hidden';
- 
-    // annulla codici randomici di carrozza e codice cp
-    var codiceCp=document.getElementById('codiceCp').innerHTML='';
-    var carrozza=document.getElementById('carrozza').innerHTML='';
-    
-    // annulla il nome del passeggero
-    var utente= document.getElementById('preleva').value;
-    utente += document.getElementById('nomePasseggero').innerHTML='';
-
-    // annulla il prezzo del biglietto in base alla distanza
-    var utentePrezzo= document.getElementById('prelevaDistanza').value;
-    utentePrezzo += document.getElementById('prezzo').innerHTML=''; 
-
 } 
 
 
